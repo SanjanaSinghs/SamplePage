@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+    <style>
+        /* Add some basic styling to your page */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+ background-image: url('background.png'); /* Replace 'background.jpg' with the path to your image */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-repeat: no-repeat; /* Prevents image repetition */
+            background-attachment: fixed; /* Keeps the image fixed in place */
+
+overflow-x: hidden;
+        }
+        header {
+            background: #FFFFFF;
+            color: cornflowerblue;
+            padding: 5px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+ body {
+            margin-top: 80px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            padding: 20px;
+        }
+        .banner {
+            flex: 1;
+            padding: 20px;
+        }
+        .form-container {
+            flex: 1;
+            padding: 20px;
+            background: #ADD8E6;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .box {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background: #ADD8E6;
+            display: flex;
+            flex-direction: column;
+        }
+@media (max-width: 500px) {
+      .container {
+        flex-direction: column;
+    }
+
+    .banner img {
+        max-width: 100%; /* Adjust the max-width for the banner image below 500px */
+        max-height: 200px; 
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%; /* Adjust box width for smaller screens */
+        margin: 10px 0; /* Adjust margin for spacing between stacked boxes */
+        padding: 10px; /* Adjust padding for content spacing within boxes */
+    }
+}
+    </style>
+<link rel="icon" href="C:\Users\sanjanasingh\Documents\program/fav-icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Fundamentals of Web Designing</h1>
+    </header>
+    <div class="container">
+        <div class="banner">
+            <img src="C:\Users\sanjanasingh\Documents\program/Image1.png" alt="Banner Image" style="width: 500px; height: 350px;">
+        </div>
+        <div class="form-container">
+            <h2>Share Your Requirement</h2>
+            <form>
+               <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+<option value="india">India</option>
+        </select>
+        <br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br><br>
+
+ <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to Newsletter</label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h2>Learn HTML</h2>
+            <p>This is just my first HTML Program</p>
+        </div>
+        <div class="box">
+            <h2>CSS Basics</h2>
+            <p>Adding Style sheets in the HTML Page will increase it's visual effects</p>
+        </div>
+        <div class="box">
+            <h2>Javascript Addition</h2>
+            <p>Make Your Website Functional by adding useful scripts</p>
+        </div>
+        <div class="box">
+            <h2>Functional Website</h2>
+            <p>Your Website is ready within the specific time frame</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
